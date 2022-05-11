@@ -24,7 +24,6 @@ body {
   justify-content: center;
 }
 
-/* Nav-bar */
 .nav-container {
   display: flex;
   position: fixed;
@@ -145,8 +144,6 @@ hr {
   width: 100px;
   margin: 40px auto;
 }
-
-/* Contact-Page */
 
 .contact-container {
   display: none;

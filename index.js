@@ -45,9 +45,7 @@ bookListSection.addEventListener('click', (event) => {
 });
 
 const dateSection = document.querySelector('.date');
-const dateTime = luxon.DateTime.now().toLocaleString(
-  luxon.DateTime.DATETIME_FULL,
-);
+const dateTime = luxon.DateTime.now().toLocaleString(luxon.DateTime.DATETIME_FULL,);
 dateSection.innerHTML = dateTime;
 
 const bookList = document.querySelector('.list-link');
