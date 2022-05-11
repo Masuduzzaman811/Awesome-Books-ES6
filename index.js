@@ -1,6 +1,5 @@
 import luxon from './modules/luxon.js';
-
-import AwesomeBooks from './modules/book.js';
+import AwesomeBooks from './modules/books.js';
 
 const awesomeBooks = new AwesomeBooks();
 awesomeBooks.load();
@@ -46,12 +45,12 @@ bookListSection.addEventListener('click', (event) => {
 
 const dateSection = document.querySelector('.date');
 const dateTime = luxon.DateTime.now().toLocaleString(luxon.DateTime.DATETIME_FULL,);
+
 dateSection.innerHTML = dateTime;
 
 const bookList = document.querySelector('.list-link');
 const addNew = document.querySelector('.add-new');
 const contact = document.querySelector('.contact');
-
 const bookSection = document.querySelector('.books-list');
 const addNewSection = document.querySelector('.form');
 const contactSection = document.querySelector('.contact-container');
