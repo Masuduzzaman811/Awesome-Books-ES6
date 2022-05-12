@@ -22,7 +22,7 @@ const renderBookList = () => {
         </article>`,
     )
     .join('');
-}
+};
 renderBookList();
 
 const addBookForm = document.querySelector('#add-book');
@@ -44,7 +44,7 @@ bookListSection.addEventListener('click', (event) => {
 });
 
 const dateSection = document.querySelector('.date');
-const dateTime = luxon.DateTime.now().toLocaleString(luxon.DateTime.DATETIME_FULL,);
+const dateTime = luxon.DateTime.now().toLocaleString(luxon.DateTime.DATETIME_FULL);
 
 dateSection.innerHTML = dateTime;
 
